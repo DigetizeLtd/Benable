@@ -141,6 +141,21 @@ section { padding-block: 44px 8px; display: grid; gap: 18px; scroll-margin-top: 
 .drops { display: flex; flex-wrap: wrap; gap: 8px; }
 .drops span { font: 500 0.8rem/1 var(--mono); background: var(--tag); color: var(--on-tag); padding: 6px 9px; border-radius: 4px; }
 
+.goals { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px; display: grid; gap: 10px; }
+.goals ul { margin: 0; padding-left: 1.1em; display: grid; gap: 6px; }
+.goals b { font-weight: 600; }
+
+/* Video scripts */
+.videos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+@media (max-width: 700px) { .videos { grid-template-columns: 1fr; } }
+.video { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; display: grid; gap: 10px; align-content: start; min-width: 0; }
+.video .hook { font-family: var(--display); font-weight: 750; font-size: 1.12rem; line-height: 1.3; text-wrap: balance; }
+.video .hook::before { content: "\201C"; } .video .hook::after { content: "\201D"; }
+.video .show { font-size: 0.92rem; }
+.video .show b { font-weight: 600; }
+.video .caption { font: 400 0.82rem/1.5 var(--mono); background: var(--paper); border-radius: 8px; padding: 10px 12px; overflow-wrap: anywhere; }
+.video .tools { justify-content: flex-start; }
+
 /* Lists */
 .howto { color: var(--muted); }
 details.list { background: var(--card); border: 1px solid var(--line); border-radius: 12px; }
@@ -204,6 +219,7 @@ footer ul { margin: 0; padding-left: 1.1em; display: grid; gap: 4px; }
   <div class="wrap">
     <a href="#math">The math</a>
     <a href="#plan">October plan</a>
+    <a href="#videos">Video scripts</a>
     <a href="#lists">The 7 lists</a>
     <a href="#rules">Rules</a>
   </div>
@@ -215,9 +231,10 @@ footer ul { margin: 0; padding-left: 1.1em; display: grid; gap: 4px; }
     <span class="eyebrow">01 · The math</span>
     <h2>What $50,000 takes</h2>
     <div class="reality">
-      <p><strong>Where you're starting from.</strong> Reviewers who publish their Benable income report anywhere from about $80 to a few thousand dollars a month. $50,000 is far past that. It's possible, but only with a large audience that already trusts your picks, or with videos that take off during the Prime and Black Friday windows.</p>
-      <p><strong>What moves the number.</strong> The biggest lever is how much you earn per order. A $5 commission needs about three times the traffic of a $15 one, so these lists lean on high-ticket items and on retailers that pay more than Amazon.</p>
-      <p><strong>Timing.</strong> Sales stay pending until the retailer's return window closes, so money you earn in October usually becomes payable later in the quarter.</p>
+      <p><strong>Where you're starting from: about 100 TikTok followers.</strong> At that size, $50,000 this month isn't a realistic target. Reviewers who publish their Benable income report about $80 to a few thousand dollars a month, and a realistic first month for a 100-follower account is roughly $0 to a few hundred dollars.</p>
+      <p><strong>Why it can still grow fast.</strong> On TikTok, reach comes from the For You page, not your follower count, so one video that takes off can bring more views in a day than your account has had all year. Pinterest works the same way: pins rank by how well they match searches. That's why this plan is built around lots of videos and lots of pins.</p>
+      <p><strong>When the money comes.</strong> Black Friday (Nov 27) through mid-December is when gift lists earn the most. October is for building the audience and pins that pay off then. Sales also stay pending until the retailer's return window closes, so October earnings usually become payable later in the quarter.</p>
+      <p><strong>What moves the number.</strong> How much you earn per order. A $5 commission needs about three times the traffic of a $15 one, so these lists lean on high-ticket items and on retailers that pay more than Amazon.</p>
     </div>
 
     <div class="calc">
@@ -271,7 +288,7 @@ footer ul { margin: 0; padding-left: 1.1em; display: grid; gap: 4px; }
         <div class="reverse">
           <div class="field">
             <label for="myviews">If your lists get this many views</label>
-            <div class="inp"><input id="myviews" type="number" inputmode="decimal" min="0" step="10000" value="100000"></div>
+            <div class="inp"><input id="myviews" type="number" inputmode="decimal" min="0" step="1000" value="5000"></div>
           </div>
           <div><span class="eyebrow">You'd earn about</span><div class="out" id="out-reverse">–</div></div>
         </div>
@@ -282,26 +299,41 @@ footer ul { margin: 0; padding-left: 1.1em; display: grid; gap: 4px; }
   <section id="plan">
     <span class="eyebrow">02 · October plan</span>
     <h2>Day by day, Oct 1–31</h2>
+    <div class="goals">
+      <span class="eyebrow">October goals</span>
+      <ul>
+        <li><b>Hit the $80 payout.</b> <span class="sub">About 1,500 list views at the balanced mix.</span></li>
+        <li><b>Reach 1,000 TikTok followers.</b> <span class="sub">About 30 a day from here.</span></li>
+        <li><b>Have 150+ pins live by Oct 31.</b> <span class="sub">So Pinterest traffic is building before Black Friday.</span></li>
+      </ul>
+    </div>
     <p class="sub">Tick things off as you go. Your checkmarks are saved in this browser only.</p>
     <div class="weeks" id="weeks"></div>
   </section>
 
+  <section id="videos">
+    <span class="eyebrow">03 · Video scripts</span>
+    <h2>Ten TikToks to film this month</h2>
+    <p class="sub">Each one points to a list. The hook is the first thing you say and the text on screen. Only claim you've used something if you have. Otherwise talk about what it does and who it's for.</p>
+    <div class="videos" id="video-root"></div>
+  </section>
+
   <section id="lists">
-    <span class="eyebrow">03 · The lists</span>
+    <span class="eyebrow">04 · The lists</span>
     <h2>Seven lists, ready to paste</h2>
     <p class="howto">In Benable, start a new list and paste the title and description. For each item, tap <b>Find it</b>, copy the product link, and add it to the list. Benable pulls in the photo and price. Then paste the blurb and rewrite it in your own words. Delete anything you wouldn't recommend to a friend. Price bands: <span class="num">$</span> under $50 · <span class="num">$$</span> $50–150 · <span class="num">$$$</span> $150–400 · <span class="num">$$$$</span> $400+.</p>
     <div id="list-root" style="display:grid; gap:14px"></div>
   </section>
 
   <section id="rules">
-    <span class="eyebrow">04 · Rules</span>
+    <span class="eyebrow">05 · Rules</span>
     <h2>Keep every dollar you earn</h2>
     <div class="rules">
       <div class="panel do">
         <h3>Do</h3>
         <ul>
           <li>Only list things you'd recommend to a friend. Rewrite each blurb in your own voice, and add your own experience where you have it.</li>
-          <li>Disclose affiliate links in your bio, list descriptions and posts. The FTC requires it.</li>
+          <li>Disclose affiliate links in your bio, list descriptions, pins and videos (#affiliate or "I earn from links"). The FTC requires it.</li>
           <li>When a product is sold in several places, link the retailer that pays the best rate.</li>
           <li>Use titles people actually search for on Pinterest and Google, like "gifts for her 2026".</li>
           <li>Connect your Amazon Associates account. Amazon also closes accounts that don't make 3 sales in their first 180 days.</li>
@@ -314,6 +346,7 @@ footer ul { margin: 0; padding-left: 1.1em; display: grid; gap: 4px; }
           <li>Buy clicks, use bots or buy through your own links. Retailers void those commissions and can close the account.</li>
           <li>Put Amazon affiliate links directly in emails or PDFs. Amazon doesn't allow it, so link to your Benable list instead.</li>
           <li>Quote Amazon prices in posts. They change constantly. Say "on sale" and send people to the list.</li>
+          <li>Buy followers or views. Fake engagement tanks your reach and can get the account removed.</li>
           <li>Pay for ads before testing small. At 3–6% commission, most paid traffic loses money.</li>
         </ul>
       </div>
@@ -326,6 +359,8 @@ footer ul { margin: 0; padding-left: 1.1em; display: grid; gap: 4px; }
       <li><a href="https://benable.com/faq" target="_blank" rel="noopener">Benable FAQ</a></li>
       <li><a href="https://kamaldeen.com/articles/benable-affiliate-program" target="_blank" rel="noopener">Benable affiliate program review (rates, pending vs confirmed)</a></li>
       <li><a href="https://inspiretothrive.com/is-benable-legit/" target="_blank" rel="noopener">Is Benable legit? (reported earnings)</a></li>
+      <li><a href="https://stan.store/blog/tiktok-link-bio-requirements-2026-guide/" target="_blank" rel="noopener">TikTok link in bio requirements 2026</a></li>
+      <li><a href="https://socialrails.com/blog/pinterest-affiliate-marketing-guide" target="_blank" rel="noopener">Pinterest affiliate marketing 2026</a></li>
       <li><a href="https://www.aboutamazon.com/news/retail/prime-big-deal-days-2026-best-deals-amazon" target="_blank" rel="noopener">Prime Big Deal Days 2026 (dates, early deals)</a></li>
       <li><a href="https://variety.com/2026/shopping/news/amazon-prime-big-deal-days-october-2026-date-best-deals-1236877781/" target="_blank" rel="noopener">Variety: Prime Big Deal Days 2026 dates and drop times</a></li>
       <li><a href="https://affiliatexblocks.com/amazon-affiliate-commission-rates/" target="_blank" rel="noopener">Amazon Associates commission rates 2026</a></li>
@@ -340,37 +375,95 @@ const DATA = {"meta": {"month": "October 2026", "price_bands": {"$": "under $50"
 
 const PLAN = [
   { dates: "Thu Oct 1", title: "Set up", items: [
+    "Switch TikTok to a Business account (Settings → Account → Switch to Business Account). It's free and reversible, and it unlocks the bio link now instead of at 1,000 followers. The trade-off is that you only get the commercial music library.",
+    "Put your Benable profile or the Holiday Gift Guide in your TikTok bio link, with \"I earn from links\" in the bio.",
     "Connect your Amazon Associates account in Benable, or apply today. Without it, Amazon items earn nothing.",
-    "Fill out your profile: a real photo, a one-line bio about what you recommend, and an affiliate disclosure.",
-    "Send your Benable referral link to creator friends. If the referral bonus is live, 10 referrals lifts every commission.",
+    "Set up a Pinterest business account with boards named like searches: \"Prime Day Deals 2026\", \"Gifts for Her 2026\" and so on.",
   ]},
-  { dates: "Fri Oct 2 – Sat Oct 3", title: "Build the Prime list", items: [
-    "Build the Prime Big Deal Days list. Paste each product, rewrite each blurb in your own voice, and cut anything you wouldn't stand behind.",
-    "Make 5 Pinterest pins for it: tall 2:3 images with search-style titles like \"Prime Day deals worth buying 2026\".",
-    "Film 3 short videos: \"Prime Day is Tuesday. The only 5 things I'd buy.\" One product per video works too.",
-  ]},
-  { dates: "Sun Oct 4 – Mon Oct 5", title: "Launch the gift guides", items: [
-    "Publish the Holiday Gift Guide, Gifts for Her and Gifts for Him. Link them to each other.",
-    "Post the Prime list with a countdown story. Email your list if you have one, linking to the Benable list rather than to Amazon.",
-    "Make 5 pins each for the three gift guides.",
+  { dates: "Fri Oct 2 – Mon Oct 5", title: "Three lists, not seven", items: [
+    "Publish only three lists for now: Prime Big Deal Days, the Holiday Gift Guide, and the one recipient list you know best. Seven lists would split the few views you have.",
+    "Post 2–3 TikToks a day from the Prime scripts below. At 100 followers the For You page decides your reach, and the first two seconds decide the For You page.",
+    "Make 5–10 pins a day linking straight to your lists: tall 2:3 images with search-style titles like \"Prime Day deals worth buying 2026\".",
   ]},
   { dates: "Tue Oct 6 – Wed Oct 7", title: "Prime Big Deal Days", peak: true, drops: ["12:01am PT", "8am PT", "1pm PT"], items: [
-    "Refresh the Prime list after each deal drop and move the deepest discounts to the top.",
-    "Post a story or short video after every drop with the list link.",
-    "Do a last-hours push Wednesday evening.",
+    "Post a short video right after each deal drop with the three best deals and \"full list in my bio\".",
+    "Refresh the Prime list after each drop and move the best discounts to the top.",
+    "Reply to every comment, and answer \"link?\" comments with a video reply. Each reply is another chance at the For You page.",
   ]},
-  { dates: "Thu Oct 8 – Sun Oct 18", title: "Gift guide push", items: [
-    "Publish Kids & Teens, Gifts Under $50 and Home Upgrades.",
-    "Post one recipient guide every day or two (\"gifts for her she'll actually use\" and so on), each linking to its list.",
-    "Pin 3–5 new pins a day across your lists.",
-    "Answer gift questions in communities that allow links, like Reddit threads and Facebook groups. Help first. Spamming gets you banned.",
+  { dates: "Thu Oct 8 – Sun Oct 18", title: "Find what works", items: [
+    "Keep posting 2–3 TikToks a day from the gift-guide scripts. Try a different hook each time and note which ones pass 1,000 views.",
+    "When a video gets 5× your usual views, post two more like it within 48 hours: same format, different products.",
+    "Publish the other lists once you're getting a steady 30+ list visits a day.",
+    "Keep pinning 5–10 pins a day.",
   ]},
-  { dates: "Mon Oct 19 – Sat Oct 31", title: "Double down", items: [
-    "Check your Benable dashboard. Make more content about the lists and items that get clicks and sales, and move top sellers to the top.",
-    "Replace items that get clicks but no sales.",
-    "Prep November: Black Friday is Nov 27 and Cyber Monday is Nov 30. Most holiday sales land in November, so what you build in October pays off then.",
+  { dates: "Mon Oct 19 – Sat Oct 31", title: "Build for November", items: [
+    "Check your Benable dashboard. Move the most-clicked items to the top of each list and swap out items nobody clicks.",
+    "Turn your best video into a series (\"part 2\", \"part 3\").",
+    "Refresh pins and titles for Black Friday (Nov 27) and Cyber Monday (Nov 30), when the same traffic earns the most.",
   ]},
 ];
+
+const VIDEOS = [
+  { when: "Oct 2–5", list: "Prime Big Deal Days",
+    hook: "Prime Day is Tuesday. Here's the only stuff worth buying.",
+    show: "Green-screen yourself over five product pages from the Prime list, 2–3 seconds each.",
+    caption: "Prime Big Deal Days is Oct 6–7. These are the deals actually worth it. Full list in my bio. #primeday #primebigdealdays #amazonfinds #affiliate" },
+  { when: "Oct 6–7", list: "Prime Big Deal Days",
+    hook: "The 8am Prime deals just dropped. Three are actually good.",
+    show: "Screen-record three deal pages. One line each on what it is and who it's for. Repeat after the 1pm drop.",
+    caption: "Prime Big Deal Days, drop 2. The full list updates after every drop. Link in bio. #primeday #primebigdealdays #amazondeals #affiliate" },
+  { when: "Oct 6–7", list: "Prime Big Deal Days",
+    hook: "Amazon's own devices are the real deal today.",
+    show: "Kindle Paperwhite, Echo Show 8, Fire TV Stick 4K, Ring doorbell and a Blink camera, one at a time.",
+    caption: "Amazon cuts its own devices hardest during Prime days. Full list in my bio. #primeday #kindle #amazonfinds #affiliate" },
+  { when: "Oct 8 on", list: "Gifts for Him",
+    hook: "Gifts for the guy who says he wants nothing.",
+    show: "Five items from the Him list, one line each on when he'd use it.",
+    caption: "He'll actually use these. Full list in my bio. #giftsforhim #giftideas #christmasgifts2026 #affiliate" },
+  { when: "Oct 8 on", list: "Gifts for Her",
+    hook: "Stop buying her candles. Get one of these instead.",
+    show: "Five items from the Her list, from cheapest to the splurge.",
+    caption: "Gifts she'll use every day. Full list in my bio. #giftsforher #giftideas #christmasgifts2026 #affiliate" },
+  { when: "Oct 8 on", list: "Gifts Under $50",
+    hook: "Gifts under $50 that don't look under $50.",
+    show: "Six items from the Under $50 list. Put \"under $50\" on screen instead of exact prices.",
+    caption: "Coworkers, teachers, Secret Santa: sorted. Full list in my bio. #giftsunder50 #secretsanta #stockingstuffers #affiliate" },
+  { when: "Oct 8 on", list: "Kids & Teens",
+    hook: "What teens are actually asking for this Christmas.",
+    show: "Switch 2, Instax Mini 12, UGG Tasman, Sol de Janeiro mists, the Govee floor lamp and a Stanley.",
+    caption: "The wish-list items that sell out by December. Full list in my bio. #giftsforteens #christmaslist #giftideas #affiliate" },
+  { when: "Oct 12 on", list: "Holiday Gift Guide",
+    hook: "Buy these now. They'll be sold out in December.",
+    show: "Switch 2, LEGO Pokémon, UGG Tasman, the newest Stanley colors and a Jellycat.",
+    caption: "Shop early for the ones that sell out. Full gift guide in my bio. #christmasgifts2026 #giftguide #holidayshopping #affiliate" },
+  { when: "Oct 12 on", list: "Gifts for Her",
+    hook: "Dyson Airwrap or Shark FlexStyle: which one should you gift?",
+    show: "Side by side: what each does and who each is for. Stick to what the product pages say unless you've used them.",
+    caption: "The splurge vs the budget pick. Both are in my gift guide, link in bio. #dysonairwrap #sharkflexstyle #giftsforher #affiliate" },
+  { when: "Oct 15 on", list: "Home Upgrades",
+    hook: "Cheap upgrades that make your place feel expensive.",
+    show: "Candle warmer lamp, Govee floor lamp, Vitruvi diffuser, Brooklinen sheets and a Ruggable.",
+    caption: "Small changes, big difference. Full list in my bio. #homeupgrades #apartmentdecor #homefinds #affiliate" },
+];
+
+function renderVideos() {
+  const root = $("#video-root");
+  root.innerHTML = VIDEOS.map((v, i) => `
+    <article class="video">
+      <span class="eyebrow">${esc(v.when)} · ${esc(v.list)}</span>
+      <p class="hook">${esc(v.hook)}</p>
+      <p class="show"><b>Show:</b> ${esc(v.show)}</p>
+      <p class="caption">${esc(v.caption)}</p>
+      <div class="tools">
+        <button class="btn" type="button" data-video="${i}" data-part="hook">Copy hook</button>
+        <button class="btn" type="button" data-video="${i}" data-part="caption">Copy caption</button>
+      </div>
+    </article>`).join("");
+  root.addEventListener("click", e => {
+    const btn = e.target.closest("button[data-video]");
+    if (btn) copyText(VIDEOS[+btn.dataset.video][btn.dataset.part], btn);
+  });
+}
 
 const PRESETS = {
   amazon:   { rate: 3, aov: 60,  cvr: 5,   label: "Mostly Amazon" },
@@ -449,7 +542,7 @@ $("#calc-form").addEventListener("submit", e => e.preventDefault());
 $("#myviews").addEventListener("input", renderCalc);
 
 /* Plan checklist, saved per browser */
-const STORE_KEY = "benable-plan-oct-2026";
+const STORE_KEY = "benable-plan-oct-2026-v2";
 function loadChecks() { try { return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; } catch { return {}; } }
 function saveChecks(s) { try { localStorage.setItem(STORE_KEY, JSON.stringify(s)); } catch {} }
 
@@ -559,5 +652,6 @@ function renderLists() {
 
 renderCalc();
 renderPlan();
+renderVideos();
 renderLists();
 </script>
