@@ -32,12 +32,12 @@ Sales stay *pending* until the retailer's return window closes, so money earned 
 
 **Thu Oct 1: Set up**
 - [ ] Switch TikTok to a Business account (Settings → Account → Switch to Business Account). It's free and reversible, and it unlocks the bio link now instead of at 1,000 followers. The trade-off is that you only get the commercial music library.
-- [ ] Put your Benable profile or the Holiday Gift Guide in your TikTok bio link, with "I earn from links" in the bio.
+- [ ] Put your Benable profile or Top 10 Kitchen Gadgets in your TikTok bio link, with "I earn from links" in the bio.
 - [ ] Connect your Amazon Associates account in Benable, or apply today. Without it, Amazon items earn nothing.
 - [ ] Set up a Pinterest business account with boards named like searches: "Prime Day Deals 2026", "Gifts for Her 2026" and so on.
 
-**Fri Oct 2 – Mon Oct 5: Three lists, not seven**
-- [ ] Publish only three lists for now: Prime Big Deal Days, the Holiday Gift Guide, and the one recipient list you know best.
+**Fri Oct 2 – Mon Oct 5: Three lists, not eight**
+- [ ] Publish only three lists for now, all in your home and kitchen niche: Prime Big Deal Days, Top 10 Kitchen Gadgets and Home Upgrades. The gift guides can follow from Oct 8.
 - [ ] Post 2–3 TikToks a day from the Prime scripts on the page. The first two seconds decide the For You page.
 - [ ] Make 5–10 pins a day linking straight to your lists (tall 2:3 images, search-style titles).
 

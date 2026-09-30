@@ -1,6 +1,6 @@
 # Benable October 2026
 
-Seven gift lists ready to paste into Benable, an October launch plan, and a calculator for how much traffic a commission goal takes.
+Eight lists ready to paste into Benable, an October launch plan, and a calculator for how much traffic a commission goal takes.
 
 | File | What it is |
 |---|---|
@@ -12,12 +12,13 @@ Seven gift lists ready to paste into Benable, an October launch plan, and a calc
 ## The lists
 
 1. **Prime Big Deal Days 2026: What's Actually Worth Buying** (20 items; publish by Oct 3)
-2. **The 2026 Holiday Gift Guide: 30 Gifts People Actually Use** (hub list; publish by Oct 5)
-3. **Gifts for Her 2026** (18 items)
-4. **Gifts for Him 2026** (15 items)
-5. **Gifts for Kids & Teens 2026** (17 items)
-6. **The Best Gifts Under $50** (18 items)
-7. **Home Upgrades That Make Life Easier** (16 items, the highest order values)
+2. **Top 10 Kitchen Gadgets Actually Worth Buying (2026)** (10 items; your signature list, publish by Oct 3)
+3. **The 2026 Holiday Gift Guide: 30 Gifts People Actually Use** (hub list)
+4. **Gifts for Her 2026** (18 items)
+5. **Gifts for Him 2026** (15 items)
+6. **Gifts for Kids & Teens 2026** (17 items)
+7. **The Best Gifts Under $50** (18 items)
+8. **Home Upgrades That Make Life Easier** (16 items, the highest order values)
 
 ## Editing
 
