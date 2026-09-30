@@ -1,0 +1,586 @@
+{
+  "meta": {
+    "month": "October 2026",
+    "price_bands": {
+      "$": "under $50",
+      "$$": "$50–150",
+      "$$$": "$150–400",
+      "$$$$": "$400+"
+    }
+  },
+  "products": {
+    "kindle-paperwhite": {
+      "name": "Kindle Paperwhite",
+      "where": ["Amazon"],
+      "price": "$$$",
+      "why": "Glare-free screen, weeks of battery, and it holds thousands of books. Amazon cuts its own devices hardest during Prime events, so this is the lowest price you'll see before the holidays."
+    },
+    "airpods-pro-3": {
+      "name": "Apple AirPods Pro 3",
+      "where": ["Amazon", "Best Buy", "Apple"],
+      "price": "$$$",
+      "why": "The default earbuds for iPhone users, with excellent noise cancelling. Prime events and Black Friday are the two times a year they get a real price cut."
+    },
+    "ninja-creami": {
+      "name": "Ninja CREAMi",
+      "where": ["Amazon", "Target"],
+      "price": "$$$",
+      "why": "Turns frozen bases into ice cream, protein ice cream and sorbet. One of the few viral kitchen gadgets people keep using after the hype."
+    },
+    "levoit-core-300": {
+      "name": "Levoit Core 300 Air Purifier",
+      "where": ["Amazon"],
+      "price": "$$",
+      "why": "Small, quiet and well reviewed for bedrooms and nurseries. A practical gift that rarely disappoints."
+    },
+    "bissell-little-green": {
+      "name": "Bissell Little Green Portable Carpet Cleaner",
+      "where": ["Amazon", "Target", "Walmart"],
+      "price": "$$",
+      "why": "Spot-cleans rugs, couches, mattresses and car seats. A must-have for anyone with kids or pets."
+    },
+    "shark-robot": {
+      "name": "Shark Robot Vacuum with Self-Empty Base",
+      "where": ["Amazon", "Shark"],
+      "price": "$$$",
+      "why": "Runs on a schedule and empties itself, so the floors stay clean without anyone thinking about it. Robot vacuums get some of the deepest Prime discounts of the year.",
+      "q": "Shark robot vacuum self empty base"
+    },
+    "dyson-cordless": {
+      "name": "Dyson V15 Detect Cordless Vacuum",
+      "where": ["Amazon", "Dyson", "Best Buy"],
+      "price": "$$$$",
+      "why": "Powerful, light, and it shows you the dust it's picking up. Dyson rarely discounts outside Prime events and Black Friday.",
+      "note": "High-ticket item. One sale here is worth dozens of small ones."
+    },
+    "theragun-mini": {
+      "name": "Theragun Mini",
+      "where": ["Amazon", "Therabody", "Best Buy"],
+      "price": "$$$",
+      "why": "A pocket-size massage gun for sore muscles and stiff necks. Great for anyone who trains, runs or sits at a desk all day."
+    },
+    "crest-whitestrips": {
+      "name": "Crest 3D Whitestrips",
+      "where": ["Amazon", "Target"],
+      "price": "$",
+      "why": "Discounted during nearly every Prime event and an easy add-to-cart. Buy it on sale or you're overpaying."
+    },
+    "laneige-lip-mask": {
+      "name": "Laneige Lip Sleeping Mask",
+      "where": ["Amazon", "Sephora"],
+      "price": "$",
+      "why": "The cult overnight lip mask. It fits in a stocking, comes in several flavors, and people rebuy it when it runs out."
+    },
+    "cosrx-snail": {
+      "name": "COSRX Advanced Snail 96 Mucin Power Essence",
+      "where": ["Amazon", "Ulta"],
+      "price": "$",
+      "why": "The viral K-beauty hydrating essence. Lightweight, works for most skin types, and it regularly drops in price during Prime events."
+    },
+    "medicube-wrapping-mask": {
+      "name": "Medicube Collagen Night Wrapping Mask",
+      "where": ["Amazon", "Medicube"],
+      "price": "$",
+      "why": "An overnight peel-off mask from one of the best-selling K-beauty brands on TikTok. Great for skincare lovers who like trying what's trending."
+    },
+    "ring-doorbell": {
+      "name": "Ring Battery Doorbell",
+      "where": ["Amazon"],
+      "price": "$$",
+      "why": "No wiring needed, and it shows who's at the door on your phone. Ring is Amazon-owned, so it gets some of the biggest Prime discounts."
+    },
+    "echo-show-8": {
+      "name": "Amazon Echo Show 8",
+      "where": ["Amazon"],
+      "price": "$$",
+      "why": "A smart display for the kitchen: recipes, timers, music, and video calls with the grandparents. Always discounted during Prime events."
+    },
+    "fire-tv-4k": {
+      "name": "Fire TV Stick 4K",
+      "where": ["Amazon"],
+      "price": "$",
+      "why": "Turns any older TV into a smart TV. One of the most-discounted items every Prime event and an easy gift under $50."
+    },
+    "stanley-quencher": {
+      "name": "Stanley Quencher H2.0 Tumbler (40 oz)",
+      "where": ["Amazon", "Target", "Stanley"],
+      "price": "$",
+      "why": "Still the most-requested tumbler, especially for teens. New colors sell out fast, so buy early."
+    },
+    "lego-orchid": {
+      "name": "LEGO Botanicals Orchid",
+      "where": ["Amazon", "LEGO", "Target"],
+      "price": "$",
+      "why": "A LEGO set for adults that becomes decor when it's done. Relaxing to build and it never needs watering."
+    },
+    "sonicare": {
+      "name": "Philips Sonicare Electric Toothbrush",
+      "where": ["Amazon", "Target"],
+      "price": "$$",
+      "why": "A real upgrade from a manual brush that people notice from the first use. Sonicare is regularly on deal during Prime events."
+    },
+    "blink-outdoor": {
+      "name": "Blink Outdoor 4 Camera",
+      "where": ["Amazon"],
+      "price": "$$",
+      "why": "Wire-free security cameras with long battery life. Blink bundles are among the steepest early Prime discounts this year."
+    },
+    "dyson-airwrap": {
+      "name": "Dyson Airwrap Multi-Styler",
+      "where": ["Dyson", "Sephora", "Ulta", "Amazon"],
+      "price": "$$$$",
+      "why": "The splurge gift she won't buy for herself. It curls, waves, smooths and dries using air instead of extreme heat, and replaces several tools at once.",
+      "note": "High-ticket and high-demand. Check which retailer pays the best rate in Benable (Sephora or Ulta often beat Amazon for beauty)."
+    },
+    "shark-flexstyle": {
+      "name": "Shark FlexStyle Air Styling & Drying System",
+      "where": ["Amazon", "Shark", "Ulta"],
+      "price": "$$$",
+      "why": "The popular Airwrap alternative at about half the price. Dries, curls and smooths in one tool."
+    },
+    "oura-ring": {
+      "name": "Oura Ring 4",
+      "where": ["Oura", "Amazon", "Best Buy"],
+      "price": "$$$",
+      "why": "Tracks sleep, recovery and activity from a ring instead of a watch. A premium gift for anyone into health or fitness. Full features need a monthly membership."
+    },
+    "barefoot-dreams": {
+      "name": "Barefoot Dreams CozyChic Throw",
+      "where": ["Nordstrom", "Barefoot Dreams", "Amazon"],
+      "price": "$$$",
+      "why": "The famously soft blanket that shows up on every gift list. Perfect for moms, hosts and anyone who's always cold."
+    },
+    "ugg-tasman": {
+      "name": "UGG Tasman Slipper",
+      "where": ["UGG", "Nordstrom", "Zappos"],
+      "price": "$$",
+      "why": "The slipper everyone from teens to moms wants. Works indoors and out, and popular sizes sell out by December."
+    },
+    "owala-freesip": {
+      "name": "Owala FreeSip Water Bottle",
+      "where": ["Amazon", "Target", "Owala"],
+      "price": "$",
+      "why": "Sip through the straw or swig from the spout, and it doesn't leak in a bag. An easy gift for any age."
+    },
+    "slip-pillowcase": {
+      "name": "Slip Pure Silk Pillowcase",
+      "where": ["Sephora", "Nordstrom", "Slip"],
+      "price": "$$",
+      "why": "A silk pillowcase that's gentler on hair and skin overnight. Feels luxurious without costing a fortune."
+    },
+    "le-creuset": {
+      "name": "Le Creuset Signature Round Dutch Oven (5.5 qt)",
+      "where": ["Le Creuset", "Williams Sonoma", "Amazon"],
+      "price": "$$$$",
+      "why": "Cookware people keep for decades. The ultimate gift for whoever hosts every holiday.",
+      "note": "High-ticket item. One sale here is worth dozens of small ones."
+    },
+    "always-pan": {
+      "name": "Our Place Always Pan 2.0",
+      "where": ["Our Place", "Target", "Amazon"],
+      "price": "$$",
+      "why": "A nonstick pan designed to replace several others, in colors people leave out on the stove. Great for new cooks and first apartments."
+    },
+    "breville-barista-express": {
+      "name": "Breville Barista Express Espresso Machine",
+      "where": ["Breville", "Williams Sonoma", "Amazon"],
+      "price": "$$$$",
+      "why": "Built-in grinder and steam wand, so it pays for itself in skipped coffee-shop runs. The big gift for the coffee lover.",
+      "note": "High-ticket item. One sale here is worth dozens of small ones."
+    },
+    "fellow-stagg": {
+      "name": "Fellow Stagg EKG Electric Kettle",
+      "where": ["Fellow", "Amazon"],
+      "price": "$$$",
+      "why": "A pour-over kettle with exact temperature control that looks great on the counter. A favorite of coffee and tea people."
+    },
+    "meater-pro": {
+      "name": "MEATER Pro Wireless Meat Thermometer",
+      "where": ["Amazon", "MEATER"],
+      "price": "$$",
+      "why": "A wire-free thermometer that sends the temperature to your phone. Makes steak, turkey and brisket nearly foolproof."
+    },
+    "ooni-koda-12": {
+      "name": "Ooni Koda 12 Gas Pizza Oven",
+      "where": ["Ooni", "Amazon", "Williams Sonoma"],
+      "price": "$$$",
+      "why": "Restaurant-style pizza in about a minute in the backyard. It becomes a family activity, not just a gadget."
+    },
+    "solo-stove": {
+      "name": "Solo Stove Bonfire 2.0",
+      "where": ["Solo Stove", "Amazon"],
+      "price": "$$$",
+      "why": "A low-smoke fire pit that makes backyard nights easy. Great for dads and families who host."
+    },
+    "yeti-roadie": {
+      "name": "YETI Roadie 24 Hard Cooler",
+      "where": ["YETI", "Amazon", "Dick's"],
+      "price": "$$$",
+      "why": "Keeps ice for days and fits in the car for tailgates, beach days and job sites. A buy-it-once gift."
+    },
+    "yeti-rambler": {
+      "name": "YETI Rambler 20 oz Tumbler",
+      "where": ["YETI", "Amazon"],
+      "price": "$",
+      "why": "Keeps coffee hot through the morning commute and survives being dropped. Easy to personalize."
+    },
+    "bose-qc-ultra": {
+      "name": "Bose QuietComfort Ultra Headphones",
+      "where": ["Amazon", "Best Buy", "Bose"],
+      "price": "$$$$",
+      "why": "Top-tier noise cancelling for flights, commutes and open offices. A splurge gift that gets used every day."
+    },
+    "airtag-4": {
+      "name": "Apple AirTag (4-pack)",
+      "where": ["Amazon", "Best Buy", "Apple"],
+      "price": "$$",
+      "why": "Tracks keys, luggage, wallets and backpacks from an iPhone. Practical for travelers and anyone who always loses their keys."
+    },
+    "airtag-1": {
+      "name": "Apple AirTag (1-pack)",
+      "where": ["Amazon", "Best Buy", "Apple"],
+      "price": "$",
+      "why": "Under $30 and handy for anyone who loses keys, backpacks or luggage."
+    },
+    "anker-maggo": {
+      "name": "Anker MagGo Power Bank",
+      "where": ["Amazon", "Anker"],
+      "price": "$$",
+      "why": "Snaps to the back of an iPhone and charges it on the go. The kind of gift people use every week."
+    },
+    "ridge-wallet": {
+      "name": "The Ridge Wallet",
+      "where": ["Ridge", "Amazon"],
+      "price": "$$",
+      "why": "A slim metal wallet that holds cards and cash without the bulk. Popular with guys who hate a fat back pocket."
+    },
+    "leatherman-wave": {
+      "name": "Leatherman Wave+ Multitool",
+      "where": ["Amazon", "Leatherman", "REI"],
+      "price": "$$",
+      "why": "A full-size multitool with pliers, knives, screwdrivers and more, backed by a 25-year warranty."
+    },
+    "carhartt-beanie": {
+      "name": "Carhartt Knit Cuffed Beanie",
+      "where": ["Amazon", "Carhartt"],
+      "price": "$",
+      "why": "The classic warm beanie in a dozen colors. An easy stocking stuffer for almost anyone."
+    },
+    "instax-mini-12": {
+      "name": "Fujifilm Instax Mini 12 Instant Camera",
+      "where": ["Amazon", "Target", "Best Buy"],
+      "price": "$$",
+      "why": "Prints photos instantly, which teens love for parties and bedroom walls. Add a pack of film so it's ready to use."
+    },
+    "yoto-mini": {
+      "name": "Yoto Mini Audio Player",
+      "where": ["Yoto", "Amazon", "Target"],
+      "price": "$$",
+      "why": "A screen-free player for audiobooks, music and podcasts, controlled with cards kids can handle themselves."
+    },
+    "magna-tiles": {
+      "name": "Magna-Tiles Classic 100-Piece Set",
+      "where": ["Amazon", "Target"],
+      "price": "$$",
+      "why": "Magnetic building tiles that get played with for years, from toddlers to big kids. A gift parents are glad to see."
+    },
+    "switch-2": {
+      "name": "Nintendo Switch 2",
+      "where": ["Amazon", "Target", "Best Buy", "Walmart"],
+      "price": "$$$$",
+      "why": "The most-wanted console of the year. Stock tightens in December, so buying early avoids scalper prices.",
+      "note": "Consoles pay a low rate on Amazon, but they pull huge traffic, and Amazon pays on everything in the shopper's cart."
+    },
+    "hatch-restore": {
+      "name": "Hatch Restore Sunrise Alarm & Sound Machine",
+      "where": ["Amazon", "Hatch", "Target"],
+      "price": "$$$",
+      "why": "Wakes you with light instead of a blaring alarm and plays sleep sounds at night. Good for anyone who struggles with mornings."
+    },
+    "lulu-belt-bag": {
+      "name": "lululemon Everywhere Belt Bag",
+      "where": ["lululemon"],
+      "price": "$",
+      "why": "The crossbody bag everyone from teens to moms still wants. Popular colors sell out quickly."
+    },
+    "jellycat-bartholomew": {
+      "name": "Jellycat Bartholomew Bear",
+      "where": ["Jellycat", "Nordstrom", "Amazon"],
+      "price": "$",
+      "why": "The famously soft teddy that works for babies, kids and adults. A cozy gift that feels special."
+    },
+    "brooklinen-sheets": {
+      "name": "Brooklinen Luxe Core Sheet Set",
+      "where": ["Brooklinen", "Amazon"],
+      "price": "$$$",
+      "why": "Buttery sateen sheets that make a bed feel like a hotel. A gift people notice every single night."
+    },
+    "sol-de-janeiro": {
+      "name": "Sol de Janeiro Cheirosa Perfume Mist Set",
+      "where": ["Sephora", "Ulta", "Amazon"],
+      "price": "$$",
+      "why": "Travel-size body mists in their best-selling scents. A top wish-list item for teens and tweens."
+    },
+    "summer-fridays": {
+      "name": "Summer Fridays Lip Butter Balm",
+      "where": ["Sephora", "Amazon"],
+      "price": "$",
+      "why": "The lip balm that took over TikTok. Buttery, glossy and an easy stocking stuffer."
+    },
+    "mejuri-hoops": {
+      "name": "Mejuri Croissant Dôme Hoops",
+      "where": ["Mejuri"],
+      "price": "$$",
+      "why": "Chunky gold hoops that go with everything. Fine jewelry that doesn't cost fine-jewelry money."
+    },
+    "solawave-wand": {
+      "name": "Solawave Radiant Renewal Skincare Wand",
+      "where": ["Solawave", "Ulta", "Amazon"],
+      "price": "$$$",
+      "why": "A red-light skincare wand that takes a few minutes a day. A trendy self-care gift for skincare lovers."
+    },
+    "glow-recipe-dew-drops": {
+      "name": "Glow Recipe Watermelon Glow Niacinamide Dew Drops",
+      "where": ["Sephora", "Amazon"],
+      "price": "$",
+      "why": "A glowy serum that doubles as a makeup base. A bestseller with teens and adults alike."
+    },
+    "nespresso-vertuo-pop": {
+      "name": "Nespresso Vertuo Pop",
+      "where": ["Amazon", "Nespresso", "Target"],
+      "price": "$$",
+      "why": "One-touch coffee and espresso in a small, colorful machine. Perfect for apartments and dorms."
+    },
+    "lego-pokemon": {
+      "name": "LEGO Pokémon Sets",
+      "where": ["LEGO", "Amazon", "Target"],
+      "price": "$$",
+      "why": "LEGO's Pokémon line is one of the most-requested toys of 2026. Expect sellouts, so shop early."
+    },
+    "toniebox": {
+      "name": "Toniebox Starter Set",
+      "where": ["Amazon", "Target", "tonies"],
+      "price": "$$",
+      "why": "A screen-free audio player for young kids that plays a story when they set a character on top. Tough enough for toddlers."
+    },
+    "kindle-kids": {
+      "name": "Kindle Kids",
+      "where": ["Amazon"],
+      "price": "$$",
+      "why": "A Kindle with a kid-proof cover, a worry-free guarantee and a year of kids' books included. Always discounted at Prime events."
+    },
+    "squishmallows": {
+      "name": "Squishmallows",
+      "where": ["Amazon", "Target", "Walmart"],
+      "price": "$",
+      "why": "Collectible plush that kids and teens keep asking for. Pick a size and character they don't have yet."
+    },
+    "needoh": {
+      "name": "NeeDoh Nice Cube",
+      "where": ["Amazon", "Target"],
+      "price": "$",
+      "why": "The squishy fidget toy that keeps selling out. A perfect stocking stuffer for kids."
+    },
+    "govee-floor-lamp": {
+      "name": "Govee RGBIC Floor Lamp",
+      "where": ["Amazon", "Govee"],
+      "price": "$$",
+      "why": "App-controlled color lighting that changes a bedroom's whole vibe. A top pick for teens and gamers."
+    },
+    "bubble-skincare": {
+      "name": "Bubble Skincare Bestsellers",
+      "where": ["Ulta", "Target", "Amazon"],
+      "price": "$",
+      "why": "Affordable skincare made for teens and tweens, in fun packaging they actually want to use."
+    },
+    "crocs-classic": {
+      "name": "Crocs Classic Clog",
+      "where": ["Crocs", "Amazon", "Zappos"],
+      "price": "$",
+      "why": "Still a kid and teen favorite. Add a few Jibbitz charms to make it personal."
+    },
+    "beats-solo-4": {
+      "name": "Beats Solo 4 Headphones",
+      "where": ["Amazon", "Best Buy", "Apple"],
+      "price": "$$$",
+      "why": "On-ear wireless headphones with long battery life, in colors teens love. Often discounted during Prime events."
+    },
+    "candle-warmer": {
+      "name": "Candle Warmer Lamp",
+      "where": ["Amazon"],
+      "price": "$",
+      "why": "Melts candles from the top without a flame, so they last longer with no soot. Looks great on a dresser."
+    },
+    "rocketbook": {
+      "name": "Rocketbook Core Reusable Notebook",
+      "where": ["Amazon", "Target"],
+      "price": "$",
+      "why": "Write, scan to the cloud, wipe clean and reuse. A great pick for students and list-makers."
+    },
+    "coop-pillow": {
+      "name": "Coop Home Goods Original Adjustable Pillow",
+      "where": ["Amazon", "Coop"],
+      "price": "$$",
+      "why": "Adjustable fill, so you can make it firmer or softer. One of the most-reviewed pillows on Amazon."
+    },
+    "bearaby-napper": {
+      "name": "Bearaby Cotton Napper Weighted Blanket",
+      "where": ["Bearaby", "Nordstrom", "Amazon"],
+      "price": "$$$",
+      "why": "A chunky knit weighted blanket that doubles as decor on the couch. Calming and cozy."
+    },
+    "ruggable": {
+      "name": "Ruggable Washable Rug",
+      "where": ["Ruggable"],
+      "price": "$$$",
+      "why": "A rug you can throw in the washing machine. A game changer for homes with kids, pets or light carpets."
+    },
+    "hue-starter": {
+      "name": "Philips Hue Starter Kit",
+      "where": ["Amazon", "Best Buy", "Philips Hue"],
+      "price": "$$$",
+      "why": "Smart bulbs that dim, change color and run on schedules. The easiest way to make a home feel upgraded."
+    },
+    "vitruvi-diffuser": {
+      "name": "Vitruvi Stone Diffuser",
+      "where": ["Vitruvi", "Nordstrom", "Amazon"],
+      "price": "$$",
+      "why": "An essential oil diffuser that looks like a piece of pottery. Pair it with an oil blend for a ready-made gift set."
+    },
+    "wonder-oven": {
+      "name": "Our Place Wonder Oven",
+      "where": ["Our Place", "Target"],
+      "price": "$$$",
+      "why": "An air fryer and toaster oven in one, designed to stay out on the counter instead of hiding in a cabinet."
+    },
+    "simplehuman-can": {
+      "name": "simplehuman Sensor Trash Can",
+      "where": ["Amazon", "simplehuman", "Target"],
+      "price": "$$$",
+      "why": "Opens with a wave of the hand. One of those upgrades you don't know you need until you have it."
+    },
+    "saatva-classic": {
+      "name": "Saatva Classic Mattress",
+      "where": ["Saatva"],
+      "price": "$$$$",
+      "why": "A premium innerspring mattress sold direct, with free white-glove delivery and a long home trial. The upgrade you feel every night.",
+      "note": "The biggest-ticket item across all lists. Confirm Saatva is monetized in Benable before featuring it."
+    }
+  },
+  "lists": [
+    {
+      "slug": "prime-big-deal-days",
+      "title": "Prime Big Deal Days 2026: What's Actually Worth Buying",
+      "description": "The Prime deals worth your money, picked out of thousands. Deals run Oct 6–7, with new drops at midnight, 8am and 1pm PT. Most of these make great early holiday gifts, so it's a good week to knock out your list.",
+      "when": "Publish by Oct 3. Push hardest Oct 5–7, and update after each deal drop.",
+      "note": "Almost everything here is on Amazon. It earns nothing unless your Amazon Associates account is connected in Benable, so check that first.",
+      "items": [
+        "kindle-paperwhite", "airpods-pro-3", "ninja-creami", "dyson-cordless", "shark-robot",
+        "bissell-little-green", "levoit-core-300", "theragun-mini", "sonicare", "ring-doorbell",
+        "blink-outdoor", "echo-show-8", "fire-tv-4k", "kindle-kids", "laneige-lip-mask",
+        "cosrx-snail", "medicube-wrapping-mask", "crest-whitestrips", "stanley-quencher", "lego-orchid"
+      ]
+    },
+    {
+      "slug": "holiday-gift-guide",
+      "title": "The 2026 Holiday Gift Guide: 30 Gifts People Actually Use",
+      "description": "Thirty gifts that get used long after the holidays, for everyone on your list and every budget. Each pick says who it's for. Shop early: popular sizes and colors sell out before Black Friday (Nov 27).",
+      "when": "Publish by Oct 5. This is your hub list: link it everywhere, all month and into November.",
+      "note": "Link each recipient list from this one, and link this one from each of them, so every visitor has somewhere to go next.",
+      "items": [
+        {"id": "dyson-airwrap", "for": "For her"},
+        {"id": "ninja-creami", "for": "For the whole family"},
+        {"id": "ugg-tasman", "for": "For teens and moms"},
+        {"id": "kindle-paperwhite", "for": "For the reader"},
+        {"id": "switch-2", "for": "For kids and teens"},
+        {"id": "barefoot-dreams", "for": "For mom"},
+        {"id": "theragun-mini", "for": "For the athlete"},
+        {"id": "oura-ring", "for": "For the health nut"},
+        {"id": "airpods-pro-3", "for": "For anyone with an iPhone"},
+        {"id": "le-creuset", "for": "For the host"},
+        {"id": "ooni-koda-12", "for": "For dad"},
+        {"id": "bose-qc-ultra", "for": "For the traveler"},
+        {"id": "breville-barista-express", "for": "For the coffee lover"},
+        {"id": "shark-flexstyle", "for": "For her, on a budget"},
+        {"id": "brooklinen-sheets", "for": "For the homebody"},
+        {"id": "hatch-restore", "for": "For the bad sleeper"},
+        {"id": "meater-pro", "for": "For the griller"},
+        {"id": "slip-pillowcase", "for": "For the beauty lover"},
+        {"id": "always-pan", "for": "For the new cook"},
+        {"id": "instax-mini-12", "for": "For teens"},
+        {"id": "magna-tiles", "for": "For little kids"},
+        {"id": "yoto-mini", "for": "For little kids"},
+        {"id": "lego-orchid", "for": "For the adult who has everything"},
+        {"id": "sol-de-janeiro", "for": "For tweens and teens"},
+        {"id": "owala-freesip", "for": "For anyone"},
+        {"id": "lulu-belt-bag", "for": "For her and teens"},
+        {"id": "jellycat-bartholomew", "for": "For babies and kids"},
+        {"id": "airtag-4", "for": "For the traveler"},
+        {"id": "laneige-lip-mask", "for": "Stocking stuffer"},
+        {"id": "carhartt-beanie", "for": "Stocking stuffer"}
+      ]
+    },
+    {
+      "slug": "gifts-for-her",
+      "title": "Gifts for Her 2026: Things She'll Actually Use",
+      "description": "For wives, moms, sisters and best friends, from stocking stuffers to the big splurge. No clutter, just things that get used every day.",
+      "when": "Publish by Oct 5. Push Oct 8–18, then again for Black Friday.",
+      "note": "Beauty often pays more through Sephora, Ulta or the brand's own site than through Amazon. When the same product is sold in several places, use the retailer that pays the best rate.",
+      "items": [
+        "dyson-airwrap", "shark-flexstyle", "barefoot-dreams", "ugg-tasman", "slip-pillowcase",
+        "oura-ring", "mejuri-hoops", "solawave-wand", "le-creuset", "always-pan",
+        "hatch-restore", "kindle-paperwhite", "lulu-belt-bag", "sol-de-janeiro", "glow-recipe-dew-drops",
+        "laneige-lip-mask", "summer-fridays", "owala-freesip"
+      ]
+    },
+    {
+      "slug": "gifts-for-him",
+      "title": "Gifts for Him 2026: For the Guy Who Says He Wants Nothing",
+      "description": "For dads, husbands, brothers and boyfriends. Grilling, coffee, recovery and everyday carry: gifts he'll use every week, not a novelty that ends up in a drawer.",
+      "when": "Publish by Oct 5. Push Oct 8–18, then again for Black Friday.",
+      "items": [
+        "theragun-mini", "meater-pro", "ooni-koda-12", "solo-stove", "yeti-roadie",
+        "breville-barista-express", "fellow-stagg", "bose-qc-ultra", "oura-ring", "airtag-4",
+        "anker-maggo", "ridge-wallet", "leatherman-wave", "yeti-rambler", "carhartt-beanie"
+      ]
+    },
+    {
+      "slug": "kids-and-teens",
+      "title": "Gifts for Kids & Teens 2026: What They're Actually Asking For",
+      "description": "The toys, tech and wish-list items kids and teens actually want this year, from toddlers to high schoolers. The hot items sell out every December, so shop early.",
+      "when": "Publish by Oct 10. Parents shop early for sellout items, so this list works all of Q4.",
+      "items": [
+        "switch-2", "lego-pokemon", "magna-tiles", "yoto-mini", "toniebox",
+        "kindle-kids", "instax-mini-12", "govee-floor-lamp", "beats-solo-4", "ugg-tasman",
+        "stanley-quencher", "sol-de-janeiro", "bubble-skincare", "crocs-classic", "jellycat-bartholomew",
+        "squishmallows", "needoh"
+      ]
+    },
+    {
+      "slug": "gifts-under-50",
+      "title": "The Best Gifts Under $50 (2026)",
+      "description": "Gifts that feel more expensive than they are. Great for coworkers, teachers, Secret Santa and stocking stuffers.",
+      "when": "Publish by Oct 10. Its biggest weeks are late November through mid-December.",
+      "note": "Low commission per order, but it converts well and gets shared a lot. Amazon pays on the shopper's whole cart, so cheap items often lead to bigger orders.",
+      "items": [
+        "laneige-lip-mask", "summer-fridays", "glow-recipe-dew-drops", "cosrx-snail", "medicube-wrapping-mask",
+        "owala-freesip", "stanley-quencher", "yeti-rambler", "lulu-belt-bag", "carhartt-beanie",
+        "jellycat-bartholomew", "lego-orchid", "fire-tv-4k", "airtag-1", "candle-warmer",
+        "rocketbook", "squishmallows", "crest-whitestrips"
+      ]
+    },
+    {
+      "slug": "home-upgrades",
+      "title": "Home Upgrades That Make Life Easier (2026)",
+      "description": "Upgrades that make a home cleaner, cozier and calmer, from under $50 to the once-a-decade splurge. Many go on sale for Prime Big Deal Days and Black Friday.",
+      "when": "Publish by Oct 12. Big-ticket home items sell best around sale events.",
+      "note": "This list has the highest average order value. A few mattress or vacuum sales can outearn hundreds of stocking stuffers.",
+      "items": [
+        "saatva-classic", "dyson-cordless", "shark-robot", "brooklinen-sheets", "bearaby-napper",
+        "coop-pillow", "ruggable", "hue-starter", "govee-floor-lamp", "vitruvi-diffuser",
+        "levoit-core-300", "bissell-little-green", "nespresso-vertuo-pop", "wonder-oven", "simplehuman-can",
+        "candle-warmer"
+      ]
+    }
+  ]
+}
