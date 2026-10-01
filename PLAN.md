@@ -57,7 +57,7 @@ Sales stay *pending* until the retailer's return window closes, so money earned 
 - [ ] Turn your best video into a series.
 - [ ] Refresh pins and titles for Black Friday (Nov 27) and Cyber Monday (Nov 30).
 
-The ten video scripts (hook, what to show, caption) are on the page in `site/index.html`.
+The video scripts (hook, what to show, caption) are on the page in `site/index.html`.
 
 ## Rules
 

@@ -155,6 +155,12 @@ section { padding-block: 44px 8px; display: grid; gap: 18px; scroll-margin-top: 
 .video .show b { font-weight: 600; }
 .video .caption { font: 400 0.82rem/1.5 var(--mono); background: var(--paper); border-radius: 8px; padding: 10px 12px; overflow-wrap: anywhere; }
 .video .tools { justify-content: flex-start; }
+.video.full { grid-column: 1 / -1; }
+.beats { list-style: none; margin: 0; padding: 0; display: grid; border-top: 1px solid var(--line); }
+.beats li { display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 12px; padding: 9px 0; border-bottom: 1px solid var(--line); }
+.beats .t { font: 500 0.8rem/1.6 var(--mono); color: var(--muted); font-variant-numeric: tabular-nums; }
+.beats .scr { font-weight: 600; font-size: 0.9rem; }
+.beats .say { font-size: 0.92rem; color: var(--muted); }
 
 /* Lists */
 .howto { color: var(--muted); }
@@ -313,7 +319,7 @@ footer ul { margin: 0; padding-left: 1.1em; display: grid; gap: 4px; }
 
   <section id="videos">
     <span class="eyebrow">03 · Video scripts</span>
-    <h2>Ten TikToks to film this month</h2>
+    <h2>TikToks to film this month</h2>
     <p class="sub">Each one points to a list. The hook is the first thing you say and the text on screen. Only claim you've used something if you have. Otherwise talk about what it does and who it's for.</p>
     <div class="videos" id="video-root"></div>
   </section>
@@ -404,6 +410,25 @@ const PLAN = [
 ];
 
 const VIDEOS = [
+  { when: "Oct 2–5", list: "Top 10 Kitchen Gadgets",
+    hook: "Ten kitchen gadgets that actually earn their counter space. Stay for number one.",
+    show: "A countdown from 10 to 1, about 3 seconds each, with the number and name big on screen. Green-screen the product photo, or use your own footage for anything you own. Real footage beats photos. Put a quiet track from the Commercial Music Library under your voice. About 42 seconds total.",
+    script: [
+      ["0:00", "10 kitchen gadgets actually worth the counter space", "Ten kitchen gadgets that actually earn their counter space. Stay for number one."],
+      ["0:03", "10 · Fellow Stagg EKG Kettle", "Exact water temperature, for coffee and tea people."],
+      ["0:06", "9 · Nespresso Vertuo Pop", "One button. Coffee or espresso. Fits anywhere."],
+      ["0:09", "8 · Our Place Wonder Oven", "Air fryer plus toaster oven, and it's cute."],
+      ["0:12", "7 · MEATER Pro", "Wireless thermometer. Your phone tells you when it's done."],
+      ["0:15", "6 · Vitamix E310", "Smoothies, soups, nut butter. Zero chunks."],
+      ["0:18", "5 · Instant Pot Duo", "Pressure cooker, slow cooker, rice cooker. One pot."],
+      ["0:21", "4 · Breville Barista Express", "Built-in grinder. Pays off in skipped coffee runs."],
+      ["0:24", "3 · KitchenAid Artisan Mixer", "The mixer people keep for twenty years."],
+      ["0:27", "2 · Ninja DualZone Air Fryer", "Two baskets, two foods, done at the same time."],
+      ["0:31", "1 · Ninja CREAMi (hold this shot longer)", "Number one. It turns a frozen protein shake into actual ice cream."],
+      ["0:36", "All 10 linked in my bio", "All ten are on my Benable, link in my bio. Prime Day is October 6th and 7th, so watch these for deals."],
+    ],
+    pin: "All 10 are on my Benable, link in my bio. Which one would you get first?",
+    caption: "Top 10 kitchen gadgets actually worth buying. All 10 are linked in my bio. #kitchengadgets #kitchenfinds #amazonkitchen #homekitchen #primeday #affiliate" },
   { when: "Oct 2–5", list: "Prime Big Deal Days",
     hook: "Prime Day is Tuesday. Here's the only stuff worth buying.",
     show: "Green-screen yourself over five product pages from the Prime list, 2–3 seconds each.",
@@ -446,22 +471,31 @@ const VIDEOS = [
     caption: "Small changes, big difference. Full list in my bio. #homeupgrades #apartmentdecor #homefinds #affiliate" },
 ];
 
+const voiceover = v => v.script.map(([, , say]) => say).join("\n");
+
 function renderVideos() {
   const root = $("#video-root");
   root.innerHTML = VIDEOS.map((v, i) => `
-    <article class="video">
+    <article class="video ${v.script ? "full" : ""}">
       <span class="eyebrow">${esc(v.when)} · ${esc(v.list)}</span>
       <p class="hook">${esc(v.hook)}</p>
       <p class="show"><b>Show:</b> ${esc(v.show)}</p>
+      ${v.script ? `<ol class="beats">${v.script.map(([t, screen, say]) => `
+        <li><span class="t">${esc(t)}</span><div><span class="scr">${esc(screen)}</span><p class="say">${esc(say)}</p></div></li>`).join("")}
+      </ol>` : ""}
+      ${v.pin ? `<p class="show"><b>Pinned comment:</b> ${esc(v.pin)}</p>` : ""}
       <p class="caption">${esc(v.caption)}</p>
       <div class="tools">
         <button class="btn" type="button" data-video="${i}" data-part="hook">Copy hook</button>
+        ${v.script ? `<button class="btn" type="button" data-video="${i}" data-part="voiceover">Copy voiceover</button>` : ""}
         <button class="btn" type="button" data-video="${i}" data-part="caption">Copy caption</button>
       </div>
     </article>`).join("");
   root.addEventListener("click", e => {
     const btn = e.target.closest("button[data-video]");
-    if (btn) copyText(VIDEOS[+btn.dataset.video][btn.dataset.part], btn);
+    if (!btn) return;
+    const v = VIDEOS[+btn.dataset.video];
+    copyText(btn.dataset.part === "voiceover" ? voiceover(v) : v[btn.dataset.part], btn);
   });
 }
 
